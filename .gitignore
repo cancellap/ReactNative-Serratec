@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+.yarn-integrity
+
+# macOS
+.DS_Store
+
+# Logs
+logs
+*.log
+*.log.*
+*.lock
+
+# Android
+android/.gradle
+android/app/build/
+android/build/
+android/.idea/
+android/local.properties
+android/.cxx/
+android/captures/
+android/*.keystore
+
+# iOS
+ios/Pods/
+ios/build/
+ios/DerivedData/
+ios/.idea/
+ios/*.xcworkspace
+ios/*.xcuserdata
+ios/.expo/
+
+# Expo
+.expo/
+.expo-shared/
+
+# React Native Packager
+*.packager
+/coverage/
+.expo/
+
+# VSCode
+.vscode/
+.settings/
+*.code-workspace
+history/
+workspaceStorage/
