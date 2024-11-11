@@ -4,15 +4,13 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "black",
-    
+    alignItems: "center",
+    justifyContent: "center"
   },
-
   estiloTexto: {
-    color: "black",
+    color: "#eeee",
     fontSize: 30,
-    backgroundColor: "#eeee",
     padding: 10,
-    borderRadius: 10,
   },
   boxForms: {
     width: "80%",
@@ -24,7 +22,7 @@ export const styles = StyleSheet.create({
   },
   imageback: {
     flex: 1,
-    resizeMode: "cover",
+    height: "100%",
     width: "100%",
     alignItems: "center",
     justifyContent: "center",

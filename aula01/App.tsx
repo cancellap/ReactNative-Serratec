@@ -4,7 +4,7 @@ import { Login } from "./src/screens/Login";
 export default function App() {
   return (
     <>
-      <StatusBar style="auto" />
+      <StatusBar style="inverted" />
       <Login />
     </>
   );

@@ -1,8 +1,9 @@
 import { Alert, Image, ImageBackground, Text, View } from "react-native";
 import { styles } from "./style";
-import BackGroundImage from "../../assets/barreiaVasco.png";
 import papai from "../../assets/pablo.png";
+import fundo from "../../assets/fundoXp.jpg";
 import { ButtonComp } from "../../components/ButtonComp";
+import { ButtonTypes } from "../../components/ButtonTypes";
 
 export const Login = () => {
   const handleLogin = () => {
@@ -14,18 +15,17 @@ export const Login = () => {
   };
   return (
     <View style={styles.container}>
-      <ImageBackground style={styles.imageback} source={BackGroundImage}>
-        <Image style={styles.image} source={papai} alt="Barreira Vasco" />
-        <Text style={styles.estiloTexto}>Login</Text>
-        <View style={styles.boxForms}>
-          <ButtonComp
-            handleFunction={handleLogin}
-            title="Login"
-            propsBackgroudColor="#840923"
-          />
-          <ButtonComp handleFunction={handleRegister} title="Cadastrar" />
-        </View>
-      </ImageBackground>
+      <Image style={styles.image} source={papai} alt="Barreira Vasco" />
+      <Text style={styles.estiloTexto}>Login</Text>
+      <View style={styles.boxForms}>
+        {/* <ButtonComp
+          handleFunction={handleLogin}
+          title="Login"
+          propsBackgroudColor="#095f84"
+        />
+        <ButtonComp handleFunction={handleRegister} title="Cadastrar" /> */}
+        <ButtonTypes title={"Entrar"} handleFunction={handleLogin} propsBackgroundColor="red"/>
+      </View>
     </View>
   );
 };
