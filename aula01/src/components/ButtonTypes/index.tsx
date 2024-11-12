@@ -9,7 +9,7 @@ interface PropsButton {
   // PropsPick: Pick<Props1, "title">;
 }
 
-type Props1 = {
+type Props1  = {
   title: string;
   title2: string;
 };

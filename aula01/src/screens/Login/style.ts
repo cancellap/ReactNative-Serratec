@@ -3,9 +3,9 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "black",
+    backgroundColor: "#B9E5E8",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   estiloTexto: {
     color: "#eeee",
@@ -13,12 +13,20 @@ export const styles = StyleSheet.create({
     padding: 10,
   },
   boxForms: {
-    width: "80%",
+    width: "90%",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#4A628A80",
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    gap: 10,
+    borderRadius: 10,
+  
   },
   image: {
-    width: 150,
+    width: 290,
     height: 150,
-    borderRadius: 100,
+    borderRadius: 10,
   },
   imageback: {
     flex: 1,
