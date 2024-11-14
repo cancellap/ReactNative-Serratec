@@ -11,14 +11,18 @@ import serratec from "../../assets/serratec.png";
 import { ButtonTypes } from "../../components/ButtonTypes";
 import { TextInputField } from "../../components/TextInput";
 import { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 
 export const Login = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
+  const navigate = useNavigation();
+
   const handleLogin = () => {
-    Alert.alert("login");
-    console.log(`infos cadastro ${email}, ${password}`);
+    // Alert.alert("login");
+    // console.log(`infos cadastro ${email}, ${password}`);
+    navigate.navigate("Home")
   };
 
   const handleEmail = (v: string) => setEmail(v);
@@ -33,14 +37,17 @@ export const Login = () => {
 
           <TextInputField
             placeHolder="Digite seu email"
-            valueinput={email}
-            handleFunctionInput={handleEmail}
+            valueInput={email}
+            hadleFunctionInput={handleEmail}
+            typeIcon="person"
           />
+
           <TextInputField
             placeHolder="Digite sua senha"
+            valueInput={password}
+            hadleFunctionInput={handlepassword}
             typeInput={true}
-            valueinput={password}
-            handleFunctionInput={handlepassword}
+            typeIcon="password"
           />
           <ButtonTypes
             title={"Entrar"}
