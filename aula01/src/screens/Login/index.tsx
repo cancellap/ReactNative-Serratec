@@ -22,7 +22,7 @@ export const Login = () => {
   const handleLogin = () => {
     // Alert.alert("login");
     // console.log(`infos cadastro ${email}, ${password}`);
-    navigate.navigate("Home")
+    navigate.navigate("StackHome")
   };
 
   const handleEmail = (v: string) => setEmail(v);
