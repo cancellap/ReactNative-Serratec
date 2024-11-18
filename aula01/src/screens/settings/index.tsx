@@ -6,7 +6,7 @@ export const Settings = () => {
   const navigate = useNavigation();
 
   const toProfile = () => {
-    navigate.navigate("Profile");
+    navigate.navigate("StackLogin");
   };
   return (
     <View style={styles.container}>

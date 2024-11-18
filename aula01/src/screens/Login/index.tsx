@@ -12,17 +12,16 @@ import { ButtonTypes } from "../../components/ButtonTypes";
 import { TextInputField } from "../../components/TextInput";
 import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
+import { useAuth } from "../../hooks/useAuth";
 
 export const Login = () => {
-  const [email, setEmail] = useState<string>("");
+  const { email, setEmail } = useAuth();
   const [password, setPassword] = useState<string>("");
 
   const navigate = useNavigation();
 
   const handleLogin = () => {
-    // Alert.alert("login");
-    // console.log(`infos cadastro ${email}, ${password}`);
-    navigate.navigate("StackHome")
+    navigate.navigate("StackHome");
   };
 
   const handleEmail = (v: string) => setEmail(v);
