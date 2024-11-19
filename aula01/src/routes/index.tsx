@@ -1,15 +1,15 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { TabRouters } from "./BottonTabs";
 import { StackRouters } from "./StackRouters";
-import { AuthProvidaer } from "../hooks/useAuth";
+import { AuthProvider } from "../hooks/useAuth";
 
 export const Routers = () => {
   return (
     <NavigationContainer>
-      <AuthProvidaer>
+      <AuthProvider>
         {/* <TabRouters /> */}
         <StackRouters />
-      </AuthProvidaer>
+      </AuthProvider>
     </NavigationContainer>
   );
 };
